@@ -1,10 +1,13 @@
 import React, { useState, useMemo } from "react";
 import "./App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Navigation from "./components/Navigation";
 import EnchantingTable from "./components/EnchantingTable";
 import EnchantmentCard from "./components/EnchantmentCard";
 import EnchantmentDetail from "./components/EnchantmentDetail";
 import SearchAndFilter from "./components/SearchAndFilter";
+import EnchantmentCombinations from "./components/EnchantmentCombinations";
+import ExperienceCalculator from "./components/ExperienceCalculator";
 import { enchantments } from "./data/mock";
 
 const Home = () => {
