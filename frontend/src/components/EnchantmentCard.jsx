@@ -78,6 +78,20 @@ const EnchantmentCard = ({ enchantment }) => {
                 Cost: {enchantment.experienceCost}
               </span>
             </div>
+
+            {/* Item Icons */}
+            {enchantment.itemIcons && (
+              <div className="flex items-center space-x-2">
+                <span className="text-xs font-bold text-purple-800">Items:</span>
+                <div className="flex space-x-1">
+                  {enchantment.itemIcons.map((icon, index) => (
+                    <span key={index} className="text-lg" title={enchantment.applicableItems[index]}>
+                      {icon}
+                    </span>
+                  ))}
+                </div>
+              </div>
+            )}
           </div>
 
           {/* Book binding effect */}
