@@ -77,7 +77,7 @@ const EnchantmentCombinations = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-purple-900 via-purple-800 to-indigo-900 py-8 px-4">
+    <div className="min-h-screen bg-gradient-to-br from-rose-900 via-red-900 to-purple-900 py-8 px-4">
       {/* Floating particles */}
       <div className="fixed inset-0 overflow-hidden pointer-events-none">
         {[...Array(25)].map((_, i) => (
