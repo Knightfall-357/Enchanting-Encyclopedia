@@ -12,7 +12,7 @@ const EnchantmentDetail = () => {
 
   if (!enchantment) {
     return (
-      <div className="min-h-screen bg-gradient-to-br from-purple-900 via-purple-800 to-indigo-900 flex items-center justify-center">
+      <div className="min-h-screen bg-gradient-to-br from-rose-900 via-red-900 to-purple-900 flex items-center justify-center">
         <Card className="bg-gradient-to-br from-amber-50 to-amber-200 border-4 border-amber-800 p-8">
           <p className="text-purple-900 text-xl font-bold">Enchantment not found!</p>
           <Link to="/">
@@ -56,7 +56,7 @@ const EnchantmentDetail = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-purple-900 via-purple-800 to-indigo-900 py-8 px-4">
+    <div className="min-h-screen bg-gradient-to-br from-rose-900 via-red-900 to-purple-900 py-8 px-4">
       {/* Floating particles */}
       <div className="fixed inset-0 overflow-hidden pointer-events-none">
         {[...Array(30)].map((_, i) => (
