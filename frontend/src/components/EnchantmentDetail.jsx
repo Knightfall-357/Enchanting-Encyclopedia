@@ -162,12 +162,26 @@ const EnchantmentDetail = () => {
 
                 <div className="bg-green-900/10 border-2 border-green-300 rounded-lg p-4">
                   <h3 className="text-xl font-bold text-purple-900 mb-4">Applicable Items</h3>
-                  <div className="flex flex-wrap gap-2">
-                    {enchantment.applicableItems.map((item, index) => (
-                      <Badge key={index} className="bg-green-800 text-green-200 border border-green-600 font-bold">
-                        {item}
-                      </Badge>
-                    ))}
+                  <div className="space-y-3">
+                    <div className="flex flex-wrap gap-2">
+                      {enchantment.applicableItems.map((item, index) => (
+                        <Badge key={index} className="bg-green-800 text-green-200 border border-green-600 font-bold">
+                          {item}
+                        </Badge>
+                      ))}
+                    </div>
+                    {enchantment.itemIcons && (
+                      <div className="flex items-center space-x-3">
+                        <span className="text-sm font-bold text-purple-900">Item Icons:</span>
+                        <div className="flex space-x-2">
+                          {enchantment.itemIcons.map((icon, index) => (
+                            <span key={index} className="text-2xl" title={enchantment.applicableItems[index]}>
+                              {icon}
+                            </span>
+                          ))}
+                        </div>
+                      </div>
+                    )}
                   </div>
                 </div>
 
