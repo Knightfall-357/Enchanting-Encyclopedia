@@ -575,15 +575,19 @@ export const experienceLevels = {
 // Categories for filtering
 export const categories = [
   { id: 'all', name: 'All Enchantments' },
-  { id: 'weapon', name: 'Weapon' },
+  { id: 'melee-weapon', name: 'Melee Weapon' },
+  { id: 'ranged-weapon', name: 'Ranged Weapon' },
   { id: 'tool', name: 'Tool' },
   { id: 'armor', name: 'Armor' },
-  { id: 'bow', name: 'Bow' },
-  { id: 'universal', name: 'Universal' }
+  { id: 'helmet', name: 'Helmet' },
+  { id: 'boots', name: 'Boots' },
+  { id: 'leggings', name: 'Leggings' },
+  { id: 'universal', name: 'Universal' },
+  { id: 'curse', name: 'Curse' }
 ];
 
 // Items that can be enchanted
 export const enchantableItems = [
-  'Sword', 'Axe', 'Pickaxe', 'Shovel', 'Hoe', 'Bow', 'Crossbow', 'Trident',
-  'Helmet', 'Chestplate', 'Leggings', 'Boots', 'Shield', 'Shears'
+  'Sword', 'Axe', 'Mace', 'Pickaxe', 'Shovel', 'Hoe', 'Bow', 'Crossbow', 'Trident',
+  'Fishing Rod', 'Helmet', 'Chestplate', 'Leggings', 'Boots', 'Shield', 'Shears'
 ];
