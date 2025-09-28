@@ -24,7 +24,7 @@ const Home = () => {
   }, [searchTerm, selectedCategory]);
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-purple-900 via-purple-800 to-indigo-900 py-8 px-4">
+    <div className="min-h-screen bg-gradient-to-br from-rose-900 via-red-900 to-purple-900 py-8 px-4">
       <div className="max-w-7xl mx-auto">
         {/* Enchanting Table Header */}
         <div className="mb-12">
