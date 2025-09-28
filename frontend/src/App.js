@@ -64,9 +64,12 @@ function App() {
   return (
     <div className="App">
       <BrowserRouter>
+        <Navigation />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/enchantment/:id" element={<EnchantmentDetail />} />
+          <Route path="/combinations" element={<EnchantmentCombinations />} />
+          <Route path="/calculator" element={<ExperienceCalculator />} />
         </Routes>
       </BrowserRouter>
     </div>
