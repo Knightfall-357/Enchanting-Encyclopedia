@@ -7,11 +7,15 @@ import { Badge } from './ui/badge';
 const EnchantmentCard = ({ enchantment }) => {
   const getCategoryColor = (category) => {
     switch (category) {
-      case 'weapon': return 'bg-red-900/50 text-red-200 border-red-600';
+      case 'melee-weapon': return 'bg-red-900/50 text-red-200 border-red-600';
+      case 'ranged-weapon': return 'bg-orange-900/50 text-orange-200 border-orange-600';
       case 'tool': return 'bg-blue-900/50 text-blue-200 border-blue-600';
-      case 'armor': return 'bg-purple-900/50 text-purple-200 border-purple-600';
-      case 'bow': return 'bg-green-900/50 text-green-200 border-green-600';
+      case 'armor': return 'bg-rose-900/50 text-rose-200 border-rose-600';
+      case 'helmet': return 'bg-indigo-900/50 text-indigo-200 border-indigo-600';
+      case 'boots': return 'bg-cyan-900/50 text-cyan-200 border-cyan-600';
+      case 'leggings': return 'bg-teal-900/50 text-teal-200 border-teal-600';
       case 'universal': return 'bg-yellow-900/50 text-yellow-200 border-yellow-600';
+      case 'curse': return 'bg-gray-900/50 text-gray-200 border-gray-600';
       default: return 'bg-gray-900/50 text-gray-200 border-gray-600';
     }
   };
